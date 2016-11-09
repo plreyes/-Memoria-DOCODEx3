@@ -1,0 +1,201 @@
+Resultados obtenidos a partir de las Anotaciones(xml) originales.
+Detecciones registradas por segmento, sin agrupar segmentos 
+continuos detectados como posible caso de plagio.
+##################################################################
+Parámetros:
+	Tamaño segmentos -> m=400 palabras.
+Criterio:
+	Mayor F1
+##################################################################
+part1/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.101	0.257	0.18	3.29	0.212	----
+	DOCODE_N  :	0.036	0.535	0.104	26.336	0.174	0.1
+	DOCODE_NXS:	0.045	0.501	0.11	14.695	0.18	0.6
+part2/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.089	0.225	0.168	3.484	0.192	----
+	DOCODE_N  :	0.037	0.555	0.106	27.1	0.178	0.1
+	DOCODE_NXS:	0.039	0.543	0.108	23.748	0.18	0.2
+part3/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.095	0.266	0.169	3.545	0.207	----
+	DOCODE_N  :	0.039	0.529	0.113	26.189	0.186	0.2
+	DOCODE_NXS:	0.044	0.511	0.114	17.522	0.186	0.5
+part4/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.107	0.245	0.196	3.085	0.218	----
+	DOCODE_N  :	0.041	0.536	0.114	23.564	0.188	0.2
+	DOCODE_NXS:	0.044	0.524	0.119	20.153	0.194	0.3
+part5/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.091	0.249	0.162	3.429	0.196	----
+	DOCODE_N  :	0.037	0.518	0.105	25.788	0.175	0.3
+	DOCODE_NXS:	0.041	0.502	0.11	20.368	0.18	0.5
+part6/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.091	0.223	0.161	3.136	0.187	----
+	DOCODE_N  :	0.038	0.548	0.108	25.25	0.18	0.2
+	DOCODE_NXS:	0.039	0.551	0.112	25.563	0.186	0.1
+part7/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.117	0.305	0.237	3.859	0.267	----
+	DOCODE_N  :	0.044	0.541	0.146	36.813	0.23	0.2
+	DOCODE_NXS:	0.051	0.513	0.152	22.948	0.235	0.6
+part8/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.111	0.263	0.2		3.118	0.227	----
+	DOCODE_N  :	0.038	0.529	0.106	23.036	0.177	0.3
+	DOCODE_NXS:	0.048	0.486	0.108	12.026	0.177	0.8
+part9/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.099	0.241	0.18	3.204	0.206	----
+	DOCODE_N  :	0.034	0.55	0.086	19.436	0.149	0.3
+	DOCODE_NXS:	0.036	0.532	0.086	16.2	0.148	0.4
+part10/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.085	0.257	0.166	4.247	0.202	----
+	DOCODE_N  :	0.037	0.551	0.108	29.55	0.181	0.1
+	DOCODE_NXS:	0.038	0.535	0.109	25.935	0.181	0.2
+part11/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.101	0.262	0.197	3.656	0.225	----
+	DOCODE_N  :	0.037	0.534	0.113	33.067	0.187	0.1
+	DOCODE_NXS:	0.038	0.529	0.115	30.783	0.189	0.1
+part12/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.091	0.235	0.175	3.583	0.201	----
+	DOCODE_N  :	0.041	0.535	0.117	25.239	0.192	0.3
+	DOCODE_NXS:	0.043	0.526	0.119	21.182	0.194	0.4
+part13/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.092	0.259	0.191	4.243	0.22	----
+	DOCODE_N  :	0.038	0.536	0.109	26.215	0.181	0.2
+	DOCODE_NXS:	0.038	0.532	0.112	27.154	0.185	0.1
+part14/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.103	0.277	0.211	3.986	0.24	----
+	DOCODE_N  :	0.037	0.526	0.099	20.649	0.167	0.4
+	DOCODE_NXS:	0.038	0.53	0.103	21.474	0.172	0.3
+part15/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.111	0.268	0.232	3.755	0.249	----
+	DOCODE_N  :	0.047	0.509	0.128	18.942	0.205	0.5
+	DOCODE_NXS:	0.047	0.514	0.129	20.103	0.206	0.4
+part16/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.103	0.245	0.178	2.995	0.206	----
+	DOCODE_N  :	0.042	0.559	0.117	22.633	0.194	0.1
+	DOCODE_NXS:	0.046	0.545	0.12	17.671	0.197	0.3
+part17/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.089	0.25	0.193	4.452	0.218	----
+	DOCODE_N  :	0.043	0.539	0.128	25.817	0.207	0.3
+	DOCODE_NXS:	0.048	0.519	0.133	19.96	0.212	0.5
+part18/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.105	0.248	0.172	2.816	0.203	----
+	DOCODE_N  :	0.041	0.534	0.122	28.45	0.199	0.1
+	DOCODE_NXS:	0.043	0.526	0.124	24.021	0.201	0.2
+part19/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.094	0.278	0.15	3.215	0.195	----
+	DOCODE_N  :	0.034	0.555	0.097	27.954	0.165	0.1
+	DOCODE_NXS:	0.041	0.512	0.102	16.415	0.17	0.6
+part20/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.113	0.299	0.209	3.529	0.246	----
+	DOCODE_N  :	0.038	0.543	0.111	28.359	0.184	0.1
+	DOCODE_NXS:	0.042	0.53	0.114	21.533	0.188	0.3
+part21/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.095	0.273	0.222	4.922	0.245	----
+	DOCODE_N  :	0.043	0.546	0.136	33.338	0.218	0.1
+	DOCODE_NXS:	0.046	0.531	0.14	26.099	0.222	0.3
+part22/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.1		0.25	0.173	3.138	0.204	----
+	DOCODE_N  :	0.035	0.54	0.096	23.947	0.163	0.1
+	DOCODE_NXS:	0.039	0.522	0.101	18.558	0.169	0.3
+part23/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.098	0.27	0.197	4.025	0.228	----
+	DOCODE_N  :	0.038	0.557	0.109	27.822	0.182	0.1
+	DOCODE_NXS:	0.041	0.543	0.111	21.649	0.184	0.3
+part24/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.101	0.233	0.155	2.565	0.186	----
+	DOCODE_N  :	0.036	0.531	0.094	20.858	0.16	0.2
+	DOCODE_NXS:	0.036	0.533	0.094	21.302	0.16	0.1
+part25/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.089	0.221	0.164	3.329	0.188	----
+	DOCODE_N  :	0.039	0.528	0.108	23.966	0.179	0.1
+	DOCODE_NXS:	0.04	0.519	0.11	22.792	0.182	0.1
+part26/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.117	0.261	0.226	3.218	0.242	----
+	DOCODE_N  :	0.041	0.528	0.126	29.167	0.203	0.1
+	DOCODE_NXS:	0.046	0.512	0.132	22.903	0.21	0.3
+part27/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.102	0.312	0.194	4.091	0.239	----
+	DOCODE_N  :	0.038	0.551	0.117	32.233	0.193	0.1
+	DOCODE_NXS:	0.046	0.519	0.12	18.142	0.195	0.6
+part28/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.11	0.268	0.201	3.25	0.23	----
+	DOCODE_N  :	0.038	0.549	0.104	23.633	0.175	0.1
+	DOCODE_NXS:	0.042	0.537	0.106	17.603	0.177	0.3
+part29/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.107	0.261	0.22	3.682	0.239	----
+	DOCODE_N  :	0.04	0.535	0.129	34.106	0.208	0.1
+	DOCODE_NXS:	0.043	0.529	0.133	30.035	0.213	0.2
+part30/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.081	0.247	0.162	4.372	0.196	----
+	DOCODE_N  :	0.033	0.548	0.085	19.893	0.147	0.4
+	DOCODE_NXS:	0.033	0.56	0.087	22.754	0.151	0.2
+part31/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.099	0.286	0.238	5.145	0.26	----
+	DOCODE_N  :	0.042	0.534	0.127	27.883	0.205	0.2
+	DOCODE_NXS:	0.044	0.533	0.13	25.804	0.209	0.2
+part32/
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.08	0.223	0.17	4.251	0.193	----
+	DOCODE_N  :	0.037	0.547	0.104	25.958	0.175	0.1
+	DOCODE_NXS:	0.038	0.542	0.106	24.077	0.177	0.1

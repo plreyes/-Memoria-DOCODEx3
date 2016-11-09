@@ -1,0 +1,48 @@
+Resultados obtenidos a partir de las Anotaciones(xml) procesadas,
+agrupadas por cantidad de plagio contenido(poco, medio, mucho).
+Detecciones registradas por segmento, sin agrupar segmentos 
+continuos detectados como posible caso de plagio.
+##################################################################
+Parámetros:
+	Tamaño segmentos -> m=400 palabras.
+Criterio:
+	Mayor F1
+##################################################################
+poco/	[ 0% - 33.3% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.221	0.514	0.584	4.558	0.547	----
+	DOCODE_N  :	0.087	0.981	0.334	50.741	0.498	0.1
+	DOCODE_NXS:	0.171	0.808	0.395	7.627	0.531	1.6
+medio/ ] 33.3% - 66.6% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.255	0.457	0.992	4.469	0.626	----
+	DOCODE_N  :	0.174	0.982	0.983	49.029	0.982	0.1
+	DOCODE_NXS:	0.177	0.977	0.985	46.062	0.981	0.1
+mucho/ ] 66.6% - 100% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.251	0.572	0.999	6.466	0.727	----
+	DOCODE_N  :	0.166	0.978	0.999	61.349	0.988	0.1
+	DOCODE_NXS:	0.167	0.972	0.999	58.47	0.985	0.1
+##################################################################
+poco/	[ 0% - 10% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.184	0.503	0.381	4.124	0.434	----
+	DOCODE_N  :	0.115	0.776	0.213	6.438	0.334	1.5
+	DOCODE_NXS:	0.154	0.702	0.257	4.413	0.376	2.0
+medio/	] 10% - 25% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.275	0.532	0.979	4.676	0.689	----
+	DOCODE_N  :	0.162	0.982	0.871	50.926	0.923	0.1
+	DOCODE_NXS:	0.172	0.98	0.884	41.042	0.93	0.2
+mucho/	] 25% - 100% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.25	0.545	0.997	6.052	0.705	----
+	DOCODE_N  :	0.167	0.979	0.988	58.583	0.983	0.1
+	DOCODE_NXS:	0.169	0.974	0.989	55.48	0.981	0.1
+

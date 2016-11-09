@@ -1,0 +1,47 @@
+Resultados obtenidos a partir de las Anotaciones(xml) procesadas,
+agrupadas por cantidad de plagio contenido(poco, medio, mucho).
+Detecciones registradas por segmento, sin agrupar segmentos 
+continuos detectados como posible caso de plagio.
+##################################################################
+Parámetros:
+	Tamaño segmentos -> m=400 palabras.
+Criterio:
+	Mayor Plagdet Score
+##################################################################
+poco/	[ 0% - 33.3% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.221	0.514	0.584	4.558	0.547	----
+	DOCODE_N  :	0.273	0.355	0.384	1.552	0.369	2.5
+	DOCODE_NXS:	0.255	0.35	0.392	1.726	0.37	2.9
+medio/ ] 33.3% - 66.6% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.255	0.457	0.992	4.469	0.626	----
+	DOCODE_N  :	0.386	0.381	0.98	1.68	0.549	2.2
+	DOCODE_NXS:	0.358	0.463	0.983	2.381	0.63	2.2
+mucho/	] 66.6% - 100% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.251	0.572	0.999	6.466	0.727	----
+	DOCODE_N  :	0.383	0.413	0.996	1.877	0.584	2.1
+	DOCODE_NXS:	0.364	0.407	0.997	2.01	0.578	2.3
+##################################################################
+poco/	[ 0% - 10% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.184	0.503	0.381	4.124	0.434	----
+	DOCODE_N  :	0.225	0.295	0.246	1.29	0.268	2.8
+	DOCODE_NXS:	0.21	0.381	0.264	1.796	0.312	3.0
+medio/	] 10% - 25% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.275	0.532	0.979	4.676	0.689	----
+	DOCODE_N  :	0.381	0.433	0.942	1.942	0.593	2.3
+	DOCODE_NXS:	0.358	0.483	0.959	2.466	0.642	2.5
+mucho/	] 25% - 100% ]
+-----------------------------------
+	ALGORITMO :	SCORE	RECALL	PREC	GRAN	F_1		LMDA
+	DOCODE    :	0.25	0.545	0.997	6.052	0.705	----
+	DOCODE_N  :	0.381	0.422	0.988	1.928	0.591	2.1
+	DOCODE_NXS:	0.36	0.416	0.989	2.087	0.586	2.3
