@@ -1,0 +1,144 @@
+{% extends "layout.html" %}
+
+
+{% block visualizations %}
+  <div class="row">
+    <div class="col-md-12">
+      <div class="tabbable" id="docode-analisys">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a href="#panel-1" data-toggle="tab">General</a>
+          </li>
+          <li>
+            <a href="#panel-2" data-toggle="tab">Segmentos</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="panel-1">
+            <div class="col-sm-12">
+              <!-- <div id="docode-freq-hist" class="barchart docode-barchart"></div> -->
+              <div id="docode-segments-linechart" class="linechart"><svg></svg></div>
+              <br><br>
+              <div id="docode-segments-differences-hist" class="histogram"></div>
+              <br>
+            </div>
+            <div class="col-sm-12">
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <center><h3>Palabras Analizadas</h3></center>
+                    <center><p id="docode-total-words" class="big-number">{{ text.total_words }}</p></center>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <center><h3>Segmentos Analizados</h3></center>
+                    <center><p id="docode-total-segments" class="big-number">{{ docode["segments"]|length }}</p></center>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <center><h3>Estilo de Escritura</h3></center>
+                    <center><p id="docode-style" class="big-number">{{ docode["style"]|round(3) }}</p></center>  
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <center><h3>Umbral</h3></center>
+                    <center><p id="docode-style" class="big-number">{{ threshold|round(3) }}</p></center>  
+                  </div>
+                </div>
+              </div>                  
+            </div>
+          </div>
+          
+          <div class="tab-pane" id="panel-2">
+            <div class="col-sm-12">
+              <h2>Segmentos</h2>
+              <div id="docode-segment-blocks"></div>
+              <table id="docode-segments-table" class="table table-striped table-bordered"></table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+{% block javascript_footer %}
+  <script type="text/javascript">
+    algorithm = {{ algorithm }}
+    threshold = {{ threshold }}
+    plagiarism_vector = {{ text.pv|tojson }}
+    VOCABULARY = {{ text.vocabulary|tojson }}
+    DOCODE_JSON = {{ docode|tojson }}
+    console.log(DOCODE_JSON);
+    console.log(VOCABULARY);
+
+
+    lstyle = [], lthreshold = [], lsegments = [], lpvc = []
+    pvc = []; //Plagio por segmentos
+    s_styles = DOCODE_JSON['segments'].map(function(s){ return parseFloat(s['s_style']);});
+    min_pvc = d3.min(s_styles.concat([threshold]))-0.02;
+    max_pvc = d3.max(s_styles.concat([threshold]))+0.02;
+    for(i = 0; i < DOCODE_JSON['segments'].length; i++){ 
+      s = plagiarism_vector.slice(DOCODE_JSON['segments'][i]['initial_word'], DOCODE_JSON['segments'][i]['final_word']);
+      if(s.indexOf(1) > -1){ //Encontramos plagio en al menos un elemento
+        if( algorithm == 1){
+          pvc.push(min_pvc);
+        }else{
+          pvc.push(max_pvc);
+        }
+      }else{
+        if( algorithm == 1){
+          pvc.push(max_pvc);
+        }else{
+          pvc.push(min_pvc);
+        }
+      }
+    }
+    $.each(DOCODE_JSON['segments'], function(i){
+      lstyle.push([i, DOCODE_JSON['style'].toFixed(3)])
+      lthreshold.push([i, threshold])
+      lpvc.push([i, pvc[i] ])
+      lsegments.push([i, DOCODE_JSON['segments'][i]['s_style']])
+    });
+    linechart_data = [{data: lstyle, label: 'Style'},
+                      {data: lthreshold, label: 'Umbral'},
+                      {data: lpvc, label: 'Segments-xml'},
+                      {data: lsegments, label: 'Segments'}];
+    draw_linechart('#docode-segments-linechart', linechart_data, 'Segmentos', 'Estilo de escritura');
+
+
+    //Histograma estilos
+    histogram(DOCODE_JSON["differences"], '#docode-segments-differences-hist');
+
+    
+    //Matrices de confusión
+    ////$('#docode-matrices').html(matrices(m, DOCODE_JSON['plagiarism_vector'], DOCODE_JSON['segments'], DOCODE_JSON['style'], [0.075]))
+  
+
+    //Información segmentos
+    $("#docode-segments-table").html('').html(segments_table());
+    $("#docode-segment-blocks").html('');
+    $.each(DOCODE_JSON['segments'], function(i){
+      html  = "<div id='segment-"+i+"' class='sc col-sm-12' style='display: none;'>"
+      html += " <input type='hidden' value=0 class='generated' />"
+      html += " <div class='linechart docode-segment-compare-linechart'><svg></svg></div><br>"
+      html += " <div class='col-sm-6'><div class='bc-s-fulltext barchart docode-barchart bc-scroll' ></div></div>"
+      html += " <div class='col-sm-6'><div class='bc-s-segment barchart docode-barchart bc-scroll' ></div></div>"
+      html += " <div class='differences-graph' ></div>"
+      html += "</div>"
+      $("#docode-segment-blocks").append(html); 
+    });
+    $("#docode-analisys").show();
+  </script>
+{% endblock %}

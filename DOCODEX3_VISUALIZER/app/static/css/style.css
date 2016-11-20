@@ -1,0 +1,7 @@
+.big-number{
+	font-size: 3em;
+}
+.docode-barchart{
+	width: 100%;
+	overflow-x: scroll; 
+}

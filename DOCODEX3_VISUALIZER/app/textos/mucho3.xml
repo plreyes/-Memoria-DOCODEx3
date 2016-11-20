@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document reference="suspicious-document00007.txt">
+  <feature name="about" authors="Wilson, Harry Leon" title="The Boss of Little Arcady" cluster="27" lang="en" />
+  <feature name="md5Hash" value="3bebd14e296990dcbbdb97e98cafb1be" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="1" this_length="15596" source_reference="source-document02707.txt" intra_cluster="false" source_language="es" source_offset="32153" source_length="17140" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="15702" this_length="13759" source_reference="source-document10444.txt" intra_cluster="false" source_language="es" source_offset="11435" source_length="15119" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="29462" this_length="1752" source_reference="source-document10444.txt" intra_cluster="false" source_language="es" source_offset="3011" source_length="1966" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="31215" this_length="2652" source_reference="source-document07959.txt" intra_cluster="false" source_language="es" source_offset="589" source_length="2778" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="33868" this_length="679" source_reference="source-document10444.txt" intra_cluster="false" source_language="es" source_offset="10374" source_length="780" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="34548" this_length="643" source_reference="source-document10444.txt" intra_cluster="false" source_language="es" source_offset="27413" source_length="706" />
+</document>
+

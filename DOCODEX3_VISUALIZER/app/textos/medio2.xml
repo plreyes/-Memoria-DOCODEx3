@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document reference="suspicious-document00037.txt">
+  <feature name="about" authors="Holley, Marietta" title="Samantha at Saratoga" lang="en" />
+  <feature name="md5Hash" value="1ffbdbb016f4090745f81e1a2c1e2df5" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="12388" this_length="16885" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="74151" this_length="22626" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="120604" this_length="20836" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="189038" this_length="21572" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="234267" this_length="2832" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="238885" this_length="408" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="260151" this_length="19009" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="294568" this_length="1942" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="298114" this_length="3353" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="328804" this_length="14656" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="351147" this_length="3745" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="378617" this_length="14413" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="405127" this_length="3965" />
+  <feature name="plagiarism" type="translation" this_language="en" this_offset="411032" this_length="249" />
+</document>
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Memoria</title>
+		<meta charset="utf-8">
+		<!-- css -->
+		<link href="{{ url_for('static', filename='plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='css/linechart.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='css/histogram.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='css/barchart.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+		<!-- js -->
+	</head>
+	<body>
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h1 class="page-header">Memoria</h1>
+			</div>
+
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h2>DOCODE <small>Test</small></h2>
+				<!-- Variables Docode -->
+				<form id="filters-form" action="{{ url_for('docodex3') }}" method=post>
+				<!--<form role="form" onsubmit="docode1();return false;">-->
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<label>Documento</label>
+						<select id="docode_file" class="form-control" name="docode-file" required >
+							{% for file in files %}
+								{% set filename = file.split("/")[-1] %}
+								<option value="{{ file }}" {% if current_file == file %} selected {% endif %}>{{ filename }}</option>
+							{% endfor %}
+						</select>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<label>Algoritmo</label>
+						<select id="docode_a" class="form-control" name="docode-algorithm" required >
+							<option value=1 {% if algorithm == 1 %} selected {% endif %}>DOCODE</option>
+							<option value=2 {% if algorithm == 2 %} selected {% endif %}>DOCODE NORMALIZADO</option>
+							<option value=3 {% if algorithm == 3 %} selected {% endif %}>DOCODE NORMALIZADO A SEGMENTOS</option>
+						</select>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<label>Tamaño segmentos</label>	
+						<input type="number" id="docode_m" name="docode-m" class="form-control" min="0" max="1000" required />
+					</div>
+					<div class="col-sm-1 col-md-1 col-lg-1 pull-right">
+						<br>
+						<button type="submit" id="docode_process_btn" class="btn btn-primary pull-right">Procesar</button>
+					</div>
+				</form>
+				<!-- ./Variables Docode -->
+				<br><br>
+			</div>
+		</div>
+
+		<!-- Visualizaciones -->
+		{% block visualizations %}{% endblock %}
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="{{ url_for('static', filename='js/jquery-2.2.3.min.js') }}"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="{{ url_for('static', filename='plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='plugins/d3/d3.v2.js') }}"></script><!-- Para linechart -->
+		<script src="{{ url_for('static', filename='js/jquery.blockUI.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/linechart.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/docodex3.js') }}"></script>
+
+		{% block javascript_footer %}{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document reference="suspicious-document00001.txt">
+  <feature name="about" authors="Sell, Henry Thorne" title="Bible Studies in the Life of Paul Historical and Constructive" cluster="6" lang="en" />
+  <feature name="md5Hash" value="aa68d8dcfda3651a819fb67f6cc6cf5d" />
+  <feature name="plagiarism" type="artificial" obfuscation="high" obfuscator_version="2009" this_language="en" this_offset="1269" this_length="3430" source_reference="source-document07076.txt" intra_cluster="false" source_language="en" source_offset="422" source_length="3450" />
+  <feature name="plagiarism" type="artificial" obfuscation="high" obfuscator_version="2009" this_language="en" this_offset="27951" this_length="16444" source_reference="source-document04093.txt" intra_cluster="false" source_language="en" source_offset="5463" source_length="16448" />
+  <feature name="plagiarism" type="artificial" obfuscation="high" obfuscator_version="2009" this_language="en" this_offset="135466" this_length="1784" source_reference="source-document07140.txt" intra_cluster="false" source_language="en" source_offset="2892" source_length="1763" />
+  <feature name="plagiarism" type="artificial" obfuscation="high" obfuscator_version="2009" this_language="en" this_offset="147327" this_length="2136" source_reference="source-document05099.txt" intra_cluster="false" source_language="en" source_offset="67718" source_length="2067" />
+  <feature name="plagiarism" type="artificial" obfuscation="high" obfuscator_version="2009" this_language="en" this_offset="154275" this_length="268" source_reference="source-document07978.txt" intra_cluster="false" source_language="en" source_offset="10273" source_length="262" />
+  <feature name="plagiarism" type="artificial" obfuscation="high" obfuscator_version="2009" this_language="en" this_offset="164193" this_length="1785" source_reference="source-document07140.txt" intra_cluster="false" source_language="en" source_offset="2892" source_length="1763" />
+</document>
+

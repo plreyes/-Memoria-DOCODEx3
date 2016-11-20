@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document reference="suspicious-document00078.txt">
+  <feature name="about" authors="Meredith, George" title="The Adventures of Harry Richmond — Volume 3" cluster="29" lang="en" />
+  <feature name="md5Hash" value="881d1d3ed1d01c82e4123b31666d2547" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="4928" this_length="18828" source_reference="source-document05371.txt" intra_cluster="false" source_language="en" source_offset="18573" source_length="18811" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="47068" this_length="762" source_reference="source-document03574.txt" intra_cluster="false" source_language="en" source_offset="2435" source_length="794" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="49243" this_length="20679" source_reference="source-document01718.txt" intra_cluster="false" source_language="en" source_offset="328106" source_length="20733" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="97020" this_length="1766" source_reference="source-document05075.txt" intra_cluster="false" source_language="en" source_offset="56828" source_length="1765" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="100878" this_length="2104" source_reference="source-document01595.txt" intra_cluster="false" source_language="en" source_offset="57518" source_length="2101" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="109604" this_length="3704" source_reference="source-document03346.txt" intra_cluster="false" source_language="en" source_offset="99272" source_length="3706" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="116830" this_length="3965" source_reference="source-document09238.txt" intra_cluster="false" source_language="en" source_offset="9207" source_length="3965" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="123894" this_length="1449" source_reference="source-document10416.txt" intra_cluster="false" source_language="en" source_offset="2624" source_length="1447" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="127110" this_length="2049" source_reference="source-document02436.txt" intra_cluster="false" source_language="en" source_offset="2089" source_length="2060" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="131449" this_length="724" source_reference="source-document09906.txt" intra_cluster="false" source_language="en" source_offset="65865" source_length="722" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="133596" this_length="3095" source_reference="source-document05156.txt" intra_cluster="false" source_language="en" source_offset="35100" source_length="3295" />
+  <feature name="plagiarism" type="artificial" obfuscation="low" obfuscator_version="2010" this_language="en" this_offset="139987" this_length="230" source_reference="source-document10256.txt" intra_cluster="false" source_language="en" source_offset="15862" source_length="233" />
+</document>
+
