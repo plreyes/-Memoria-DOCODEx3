@@ -2,6 +2,18 @@
 
 Este repositorio contiene los algoritmos desarrollados en el marco del trabajo de memoria realizado para optar al título de Ingeniero Civil en Informática de la Universidad Técnica Federico Santa María.
 
+## Corpus Prueba
+
+El corpus de prueba utilizado en los experimentos realizados es **PAN Plagiarism Corpus 2010**, puesto a dispoción por la competencia PAN el año 2010-2011. El corpus consta de 2 carpetas principales: _source-documents_ compuesta sólo de documetos originales  y _suspicious-documents_ compuesto de documentos con plagio artificial.
+
+En este proyecto se utilizó sólo la carpeta _suspicious-documents_ del corpus, debido a que se trabaja en la modalidad de detección intrínseca de plagio.
+
+El corpus se encuentra disponible online y  puede ser descargado desde el siguiente link:
+    
+    http://www.uni-weimar.de/en/media/chairs/webis/corpora/corpus-pan-pc-10/
+ 
+
+
 ## DOCODEX3
 
 * **Source**
